@@ -1,4 +1,5 @@
-import { Button } from '../../Components/ui/Button';
+// import { Button } from '../../Components/ui/Button'; // Hapus
+import { Button } from '@/Components/ui/button'; // Import shadcn
 import { ArrowRight } from 'lucide-react';
 
 export const HeroSection = () => {
@@ -8,7 +9,7 @@ export const HeroSection = () => {
         <div className="flex-1 w-full lg:w-1/2 text-center lg:text-left">
           <div className="space-y-6">
             <div className="inline-block px-4 py-1.5 bg-sky-50 text-sky-600 rounded-full text-xs font-bold tracking-wider uppercase mb-2 border border-sky-100">
-              New Arrival 2024
+              New Arrival 2026
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-slate-900 leading-[1.1] tracking-tight">
               Happiness<br />blooms from<br />
@@ -21,7 +22,10 @@ export const HeroSection = () => {
               Jelajahi koleksi furnitur minimalis dan tanaman hias yang dirancang untuk menciptakan kedamaian.
             </p>
             <div className="flex flex-wrap gap-4 pt-6 justify-center lg:justify-start">
-              <Button>Shop now</Button>
+              {/* shadcn variant="default" */}
+              <Button className="rounded-none">Shop now</Button>
+              
+              {/* shadcn variant="outline" */}
               <Button variant="outline" className="flex items-center gap-2">
                 Explore plants <ArrowRight className="w-4 h-4" />
               </Button>
@@ -30,6 +34,7 @@ export const HeroSection = () => {
         </div>
         <div className="flex-1 w-full lg:w-1/2">
           <div className="grid grid-cols-2 grid-rows-2 gap-4 h-[500px] w-full">
+            {/* Gambar tetap sama */}
             <div className="row-span-2 rounded-3xl overflow-hidden shadow-lg relative group">
               <img src="https://picsum.photos/seed/cabnetv/600/900" alt="Furniture" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
             </div>
